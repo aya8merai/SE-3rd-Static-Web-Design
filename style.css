@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.artext {
+  /* text-align: right; */
+  font-family: "Hacen Algeria", "Baloo Bhaijaan 2", "Foda Free Font",
+    "29LT Zeyn Medium", AF_Hijaz;
+}
+
+body {
+  background-color: #292d46;
+  text-align: right;
+  /* background-color: #51588b; */
+  /* direction: rtl; */
+  font-size: 16px;
+}
+
+.MyContent {
+  margin: 10%;
+}
+
+.bg-banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/BG.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  width: 200px;
+  /* padding: 15px 20px;
+    margin: 10px; */
+  cursor: pointer;
+}
+
+.navbar {
+  width: 95%;
+  margin: auto;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  color: #fff;
+  font-size: 18px;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background: plum;
+  /* background: radial-gradient(circle at top right, plum, palevioletred); */
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.2s;
+}
+
+.navbar ul li:hover:after {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+.content h1 {
+  font-weight: lighter;
+  font-size: 43px;
+  font-family: "Foda Free Font";
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  /* margin-bottom: 10px; */
+}
+
+.content h2 {
+  font-size: 90px;
+  padding: 0;
+  margin: 0;
+  /* margin-top: 80px; */
+}
+
+.content p {
+  /* margin: 15px auto; */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  line-height: 25px;
+  font-size: 25px;
+  margin: 10px 0px 20px 0;
+  font-family: "Hacen Algeria", "Baloo Bhaijaan 2", "Foda Free Font",
+    "29LT Zeyn Medium", AF_Hijaz;
+}
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  margin: 20px 10px;
+  text-align: center;
+  border-radius: 24px;
+  font-weight: bold;
+  border: 2px solid plum;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span {
+  /* background: palevioletred; */
+  background: radial-gradient(circle at top right, plum, palevioletred);
+  height: 100%;
+  width: 00%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+}
+
+button:active span {
+  background: linear-gradient(pink, violet);
+  /* background: rgba(255, 255, 255, 0); */
+}
+
+/*          ACTIVE HOME            */
+
+.active {
+  color: white;
+  background: radial-gradient(
+    circle at top right,
+    plum,
+    palevioletred,
+    rgb(75, 70, 115)
+  );
+  text-decoration: none;
+  padding: 5px 8px;
+  border-radius: 10px;
+  /* text-transform: uppercase; */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*--------------------------BLOCKS-----------------------*/
+
+.block {
+  float: left;
+  width: 33%;
+  margin: 1px;
+  background-color: #6ad4dd;
+  border: 5px solid rgba(135, 207, 235, 0.1);
+  border-radius: 10%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.block:hover {
+  color: black;
+  background-color: #97e7e1;
+}
+
+/*           Text Box           */
+.textbox {
+  text-align: right;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 2%;
+  border-radius: 10%;
+  box-sizing: border-box;
+}
+
+.textbox img {
+  float: right;
+  width: 100%;
+  margin: 0;
+  padding: 0%;
+  border-radius: 10%;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* 
+
+.social-icons{
+    right: 72px;
+    bottom: 0px;
+    position: absolute;
+    z-index: +1;
+} */
+
+/*----------!!!!!    FOOTER    !!!!!!-----------*/
+
+#main-footer {
+  background: linear-gradient(pink, violet, mediumslateblue);
+  color: white;
+  /* font-size: 20px; */
+  /* font-weight: bold; */
+  text-align: center;
+  /* border: 2px solid pink; */
+  margin: 0% 35%;
+  padding: 10px;
+  border-radius: 20px;
+  bottom: 0px;
+  margin-bottom: 0%;
+}
+
+/*              LOGIN PAGE              */
+
+.login-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url("images/BG.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.w-box {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.w-box h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.w-box .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  /* background: salmon; */
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-60%);
+  font-size: 20px;
+}
+
+.w-box .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  accent-color: white;
+  font-size: 14.5px;
+  margin-right: -15px 0px 15;
+}
+
+.remember-forgot a {
+  color: white;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input {
+  color: white;
+  text-decoration: none;
+}
+
+/*       LOGIN BUTTON       */
+
+.w-box .btn {
+  margin: 10px 0px;
+  width: 100%;
+  height: 43px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #292d46;
+  font-weight: 600;
+}
+
+.btn a {
+  text-decoration: none;
+  color: hsl(232, 26%, 22%);
+}
+
+.btn:hover {
+  color: white;
+  background-color: #ffffff80;
+}
+
+.btn:hover a {
+  color: white;
+}
+
+.btn:active {
+  background-color: white;
+}
+
+.top {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  top: 0px;
+}
+
+/*           404.html             */
+.content404 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+.content404 h1 {
+  font-size: 85px;
+  margin-top: 80px;
+  /* margin-bottom: 10px; */
+}
+
+.content404 h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+.content404 p {
+  /* margin: 15px auto; */
+  margin: 25px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
